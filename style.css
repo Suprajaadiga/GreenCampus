@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4fff5;
+    color: #26382a;
+}
+
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 18px 7%;
+
+    background-color: #ffffff;
+
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #168a45;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-links a:hover {
+    color: #168a45;
+}
+
+.menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    font-size: 25px;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            rgba(20, 130, 70, 0.65),
+            rgba(0, 80, 45, 0.7)
+        ),
+        url("https://green.nd.edu/assets/589975/800x533/screenshot_2024_10_11_at_94351_am.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content {
+    color: white;
+    max-width: 800px;
+}
+
+.small-title {
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 70px;
+    margin: 15px 0;
+}
+
+.hero h1 span {
+    color: #b8f542;
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.hero-btn {
+    display: inline-block;
+
+    margin-top: 25px;
+    padding: 14px 28px;
+
+    background-color: #b8f542;
+    color: #174d2d;
+
+    text-decoration: none;
+
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.hero-btn:hover {
+    background-color: white;
+}
+
+
+/* ================= COMMON SECTION ================= */
+
+.section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title p {
+    color: #20a653;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.section-title h2 {
+    font-size: 40px;
+    margin-top: 8px;
+}
+
+
+/* ================= ABOUT ================= */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image,
+.about-text {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.about-text h3 {
+    font-size: 30px;
+    color: #168a45;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.stats {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.stats div {
+    flex: 1;
+
+    padding: 15px;
+
+    text-align: center;
+
+    background-color: #dff7df;
+
+    border-radius: 15px;
+}
+
+.stats h3 {
+    margin: 0;
+}
+
+
+/* ================= ACTIVITIES ================= */
+
+.activities-section {
+    background-color: #effbea;
+}
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+.card {
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.green-card {
+    background-color: #b9eebc;
+}
+
+.blue-card {
+    background-color: #bce5f5;
+}
+
+.yellow-card {
+    background-color: #fff0a8;
+}
+
+.pink-card {
+    background-color: #ffd0df;
+}
+
+.card-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin-bottom: 12px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+
+/* ================= SOLAR ================= */
+
+.solar-section {
+    background-color: #fffbe8;
+}
+
+.solar-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.solar-text,
+.solar-image {
+    flex: 1;
+}
+
+.solar-text h3 {
+    color: #d18b00;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.solar-text p {
+    line-height: 1.7;
+}
+
+.solar-text ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.solar-text li {
+    margin-bottom: 12px;
+}
+
+.solar-image img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+
+/* ================= WASTE ================= */
+
+.waste-section {
+    background-color: #f1f8ff;
+}
+
+.waste-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.waste-image,
+.waste-text {
+    flex: 1;
+}
+
+.waste-image img {
+    width: 100%;
+    border-radius: 25px;
+}
+
+.waste-text h3 {
+    color: #168a45;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.waste-text > p {
+    line-height: 1.7;
+}
+
+.waste-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.waste-items div {
+    padding: 18px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.waste-items span {
+    font-size: 30px;
+}
+
+.waste-items h4 {
+    margin: 8px 0;
+}
+
+.waste-items p {
+    font-size: 13px;
+}
+
+
+/* ================= GALLERY ================= */
+
+.gallery-section {
+    background-color: #ffffff;
+}
+
+.gallery {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+
+    border-radius: 20px;
+
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-section {
+    background-color: #dff7df;
+}
+
+.contact-container {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info,
+#contactForm {
+    flex: 1;
+}
+
+.contact-info h3 {
+    color: #168a45;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+}
+
+#contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    font-family: Arial;
+}
+
+#contactForm textarea {
+    resize: none;
+}
+
+#contactForm button {
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #168a45;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #0d6331;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 35px;
+
+    text-align: center;
+
+    background-color: #123d26;
+
+    color: white;
+}
+
+footer h3 {
+    color: #b8f542;
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        flex-direction: column;
+
+        padding: 20px;
+
+        background-color: white;
+
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+    }
+
+    .about-container,
+    .solar-container,
+    .waste-container,
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .section {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .waste-items {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+}
